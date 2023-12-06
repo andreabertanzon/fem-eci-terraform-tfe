@@ -15,7 +15,7 @@ locals {
 
     "fem-eci-github" = {
       description = "Example automation workspace for github resources."
-      execution_mode = "local" # set local first for state purposes
+      execution_mode = "remote" # set local first for state purposes
       project_id = module.project["fem-eci-project"].id
       vcs_repo_identifier = "${var.github_organization_name}/fem-eci-terraform-github"
     }
